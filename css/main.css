@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, button, ul, li, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  height: 1024px;
+  background-image: radial-gradient(circle at 42% 49%, rgba(34, 34, 34, 0.43), #0F0F0F), url(../images/hero/bg.png);
+}
+
+.hero .nav {
+  padding-top: 398px;
+  width: 169px;
+  height: 100%;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.hero .nav .menu {
+  margin: 0 auto;
+  width: 59px;
+}
+
+.hero .nav .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 34px;
+  font-family: FiraSans-Medium;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero .nav .menu .menu-item img {
+  margin-bottom: 6px;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
