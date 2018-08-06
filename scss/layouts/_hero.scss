@@ -55,6 +55,8 @@
   }
 
   .nav {
+    display: flex;
+    flex-direction: column;
     padding-top: 398px;
     width: 169px;
     height: 100%;
@@ -78,6 +80,41 @@
           margin-bottom: 6px;
           max-width: 100%;
         }
+      }
+    }
+
+    .search {
+      margin-top: 12px;
+      margin-bottom: 26px;
+    }
+
+    .date {
+      color: #ffffff;
+      text-align: center;
+
+      .data-day {
+        font-family: FiraSans-ExtraBold;
+        font-size: 72px;
+      }
+
+      .data-year-and-month {
+        margin-top: -6px;
+        font-family: FiraSans-Light;
+        font-size: 16px;
+      }
+    }
+
+    .location {
+      margin-top: 30px;
+      font-family: FiraSans-Light;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-align: center;
+
+      .location-icon {
+        margin-right: 2px;
+        vertical-align: top;
       }
     }
   }

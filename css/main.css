@@ -84,6 +84,8 @@ a {
 }
 
 .hero .nav {
+  display: flex;
+  flex-direction: column;
   padding-top: 398px;
   width: 169px;
   height: 100%;
@@ -109,6 +111,41 @@ a {
 .hero .nav .menu .menu-item img {
   margin-bottom: 6px;
   max-width: 100%;
+}
+
+.hero .nav .search {
+  margin-top: 12px;
+  margin-bottom: 26px;
+}
+
+.hero .nav .date {
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero .nav .date .data-day {
+  font-family: FiraSans-ExtraBold;
+  font-size: 72px;
+}
+
+.hero .nav .date .data-year-and-month {
+  margin-top: -6px;
+  font-family: FiraSans-Light;
+  font-size: 16px;
+}
+
+.hero .nav .location {
+  margin-top: 30px;
+  font-family: FiraSans-Light;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero .nav .location .location-icon {
+  margin-right: 2px;
+  vertical-align: top;
 }
 
 /*# sourceMappingURL=main.css.map */
