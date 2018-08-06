@@ -3,6 +3,57 @@
   height: 1024px;
   background-image: radial-gradient(circle at 42% 49%, rgba(34, 34, 34, .43), #0F0F0F), url(../images/hero/bg.png);
 
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .logo-text-large {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: FiraSans-ExtraBold;
+      font-size: 200px;
+      line-height: 156px;
+      color: rgba(255, 255, 255, .07);
+      transform: translateX(-14px);
+    }
+
+    .logo-rect-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 169px;
+      height: 181px;
+      background-color: #4af6cd;
+    }
+
+    .logo-text-small {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: FiraSans-ExtraBold;
+      font-size: 60px;
+      color: #ffffff;
+      transform-origin: left center;
+      transform: rotate(-90deg) translate(-242px, 80px);
+
+      .logo-text-surf {
+        padding-left: 36px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          width: 20px;
+          height: 2px;
+          background-color: #ffffff;
+          transform: translate(-29px, -50%);
+        }
+      }
+    }
+  }
+
   .nav {
     padding-top: 398px;
     width: 169px;

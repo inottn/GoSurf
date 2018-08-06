@@ -32,6 +32,57 @@ a {
   background-image: radial-gradient(circle at 42% 49%, rgba(34, 34, 34, 0.43), #0F0F0F), url(../images/hero/bg.png);
 }
 
+.hero .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero .logo .logo-text-large {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FiraSans-ExtraBold;
+  font-size: 200px;
+  line-height: 156px;
+  color: rgba(255, 255, 255, 0.07);
+  transform: translateX(-14px);
+}
+
+.hero .logo .logo-rect-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 169px;
+  height: 181px;
+  background-color: #4af6cd;
+}
+
+.hero .logo .logo-text-small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FiraSans-ExtraBold;
+  font-size: 60px;
+  color: #ffffff;
+  transform-origin: left center;
+  transform: rotate(-90deg) translate(-242px, 80px);
+}
+
+.hero .logo .logo-text-small .logo-text-surf {
+  padding-left: 36px;
+}
+
+.hero .logo .logo-text-small .logo-text-surf::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  transform: translate(-29px, -50%);
+}
+
 .hero .nav {
   padding-top: 398px;
   width: 169px;
