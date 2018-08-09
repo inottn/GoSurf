@@ -149,16 +149,19 @@ a {
   vertical-align: top;
 }
 
-.hero .page-title {
+.hero .hero-content {
   position: absolute;
   bottom: 0;
   right: 0;
   margin-right: 73px;
+}
+
+.hero .hero-content .page-title {
   text-transform: uppercase;
   text-align: right;
 }
 
-.hero .page-title p {
+.hero .hero-content .page-title p {
   position: relative;
   font-family: FiraSans-Regular;
   font-size: 22px;
@@ -167,11 +170,11 @@ a {
   transform: translateX(7px);
 }
 
-.hero .page-title p:last-of-type {
+.hero .hero-content .page-title p:last-of-type {
   margin-top: 36px;
 }
 
-.hero .page-title p::before {
+.hero .hero-content .page-title p::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -181,17 +184,61 @@ a {
   transform: translate(-104px, -50%);
 }
 
-.hero .page-title .heading-shore {
+.hero .hero-content .page-title .heading-shore {
   margin-top: 10px;
   font-family: FiraSans-ExtraBold;
   font-size: 80px;
   color: #ffffff;
 }
 
-.hero .page-title .heading-description {
+.hero .hero-content .page-title .heading-description {
   margin-top: 12px;
   font-family: FiraSans-ExtraBold;
   font-size: 40px;
+  color: #ffffff;
+}
+
+.hero .hero-content .pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 37px;
+}
+
+.hero .hero-content .pagination .pagination-item {
+  margin-right: 40px;
+}
+
+.hero .hero-content .pagination .pagination-item:last-child {
+  margin-right: 0;
+}
+
+.hero .hero-content .pagination .pagination-item .progress {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.hero .hero-content .pagination .pagination-item .progress.active {
+  background-color: #4af6cd;
+}
+
+.hero .hero-content .pagination .pagination-item .number-and-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .hero-content .pagination .pagination-item .number-and-description .number {
+  font-family: FiraSans-ExtraBold;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.hero .hero-content .pagination .pagination-item .number-and-description .description {
+  font-family: FiraSans-Light;
+  font-size: 16px;
   color: #ffffff;
 }
 

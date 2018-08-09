@@ -120,49 +120,96 @@
     }
   }
 
-  .page-title {
+  .hero-content {
     position: absolute;
     bottom: 0;
     right: 0;
     margin-right: 73px;
-    text-transform: uppercase;
-    text-align: right;
 
-    p {
-      position: relative;
-      font-family: FiraSans-Regular;
-      font-size: 22px;
-      letter-spacing: 7px;
-      color: rgba(255, 255, 255, .5);
-      transform: translateX(7px);
-
-      &:last-of-type {
-        margin-top: 36px;
+    .page-title {
+      text-transform: uppercase;
+      text-align: right;
+  
+      p {
+        position: relative;
+        font-family: FiraSans-Regular;
+        font-size: 22px;
+        letter-spacing: 7px;
+        color: rgba(255, 255, 255, .5);
+        transform: translateX(7px);
+  
+        &:last-of-type {
+          margin-top: 36px;
+        }
+  
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          width: 80px;
+          height: 1px;
+          background-color: rgba(255, 255, 255, .5);
+          transform: translate(-104px, -50%);
+        }
       }
-
-      &::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        width: 80px;
-        height: 1px;
-        background-color: rgba(255, 255, 255, .5);
-        transform: translate(-104px, -50%);
+  
+      .heading-shore {
+        margin-top: 10px;
+        font-family: FiraSans-ExtraBold;
+        font-size: 80px;
+        color: #ffffff;
+      }
+  
+      .heading-description {
+        margin-top: 12px;
+        font-family: FiraSans-ExtraBold;
+        font-size: 40px;
+        color: #ffffff;
       }
     }
 
-    .heading-shore {
-      margin-top: 10px;
-      font-family: FiraSans-ExtraBold;
-      font-size: 80px;
-      color: #ffffff;
-    }
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      margin-bottom: 37px;
 
-    .heading-description {
-      margin-top: 12px;
-      font-family: FiraSans-ExtraBold;
-      font-size: 40px;
-      color: #ffffff;
+      .pagination-item {
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .progress {
+          margin-bottom: 10px;
+          width: 200px;
+          height: 4px;
+          background-color: #ffffff;
+
+          &.active {
+            background-color: #4af6cd;
+          }
+        }
+
+        .number-and-description {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .number {
+            font-family: FiraSans-ExtraBold;
+            font-size: 24px;
+            color: #ffffff;
+          }
+  
+          .description {
+            font-family: FiraSans-Light;
+            font-size: 16px;
+            color: #ffffff;
+          }
+        }
+      }
     }
   }
 }
