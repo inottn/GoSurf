@@ -255,4 +255,44 @@ a {
   left: 210px;
 }
 
+.surf {
+  position: relative;
+}
+
+.surf .surf-title {
+  position: relative;
+  top: 160px;
+  left: 245px;
+  display: inline-block;
+  font-family: FiraSans-ExtraBold;
+  font-size: 80px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.surf .surf-title::before {
+  position: absolute;
+  top: -8px;
+  left: -294px;
+  content: 'Surf';
+  font-family: FiraSans-ExtraBold;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.02);
+  text-transform: uppercase;
+}
+
+.surf .surf-title::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background-color: #4af6cd;
+}
+
+html {
+  background-color: #171919;
+}
+
 /*# sourceMappingURL=main.css.map */
