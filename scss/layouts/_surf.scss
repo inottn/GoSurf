@@ -2,7 +2,7 @@
   position: relative;
 
   .surf-title {
-    position: relative;
+    position: absolute;
     top: 160px;
     left: 245px;
     display: inline-block;
@@ -30,6 +30,45 @@
       width: 80px;
       height: 1px;
       background-color: #4af6cd;
+    }
+  }
+
+  .current-location {
+    position: absolute;
+    top: 310px;
+    right: 80px;
+    text-align: right;
+    text-transform: uppercase;
+
+    p {
+      position: relative;
+      font-family: FiraSans-Regular;
+      font-size: 22px;
+      letter-spacing: 7px;
+      color: rgba(255, 255, 255, .5);
+      transform: translateX(7px);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 80px;
+        height: 1px;
+        background-color: rgba(255, 255, 255, .5);
+        transform: translate(-104px, -50%);
+      }
+    }
+
+    h2 {
+      margin-top: 12px;
+      font-family: FiraSans-ExtraBold;
+      font-size: 40px;
+      color: #ffffff;
+
+      span {
+        font-family: FiraSans-Thin;
+        font-weight: normal;
+      }
     }
   }
 }
