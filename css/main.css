@@ -459,6 +459,152 @@ a {
   left: 1089px;
 }
 
+.surf .shores {
+  display: flex;
+  margin-top: 110px;
+}
+
+.surf .shores .shore {
+  position: relative;
+  flex-shrink: 0;
+  width: 390px;
+  height: 750px;
+  overflow: hidden;
+}
+
+.surf .shores .shore::after {
+  content: '';
+  position: absolute;
+  z-index: 210;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1C2121;
+  opacity: .85;
+}
+
+.surf .shores .shore.active::after {
+  opacity: .3;
+}
+
+.surf .shores .shore h3 {
+  position: absolute;
+  z-index: 211;
+  top: 76px;
+  left: 40px;
+  font-family: FiraSans-ExtraBold;
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.surf .shores .shore .shore-location {
+  position: absolute;
+  z-index: 211;
+  top: 0;
+  left: 0;
+  font-family: FiraSans-Regular;
+  font-size: 18px;
+  letter-spacing: 8px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transform-origin: left center;
+  transform: rotate(-90deg) translate(-662px, 48px);
+}
+
+.surf .shores .shore .shore-location span {
+  font-family: FiraSans-Thin;
+}
+
+.surf .shores .shore .view-surf {
+  position: absolute;
+  z-index: 211;
+  bottom: 0;
+  left: 45px;
+  font-family: FiraSans-ExtraBold;
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.surf .shores .shore .view-surf .view-surf-bg {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  width: 168px;
+  height: 80px;
+  background-color: #4af6cd;
+}
+
+.surf .shores .shore .view-surf .view-surf-text {
+  padding-bottom: 14px;
+}
+
+.surf .shores .shore .view-surf .view-surf-text span {
+  padding-left: 27px;
+  padding-right: 57px;
+}
+
+.surf .shores .shore .view-surf .view-surf-text span::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 98px;
+  width: 20px;
+  height: 1px;
+  background-color: #ffffff;
+  transform: translate(0, -50%);
+}
+
+.surf .shores .shore .view-surf .view-surf-text span::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 16px;
+  width: 25px;
+  height: 21px;
+  background-image: url(../images/surf/arrow-right.svg);
+  transform: translate(0, -50%);
+}
+
+.surf .shores .North-Shore {
+  z-index: 200;
+  transform: translate(0, 32px);
+}
+
+.surf .shores .North-Shore img {
+  transform: translate(-448px, 0);
+}
+
+.surf .shores .South-Shore {
+  z-index: 201;
+  transform: translate(-40px);
+}
+
+.surf .shores .South-Shore img {
+  transform: translate(-730px, 0);
+}
+
+.surf .shores .West-Shore {
+  z-index: 202;
+  transform: translate(-80px, 89px);
+}
+
+.surf .shores .West-Shore img {
+  transform: translate(-215px, 0);
+}
+
+.surf .shores .East-Shore {
+  z-index: 203;
+  transform: translate(-120px);
+}
+
+.surf .shores .East-Shore img {
+  transform: translate(-268px, 0);
+}
+
 html {
   background-color: #171919;
 }
