@@ -257,6 +257,9 @@ a {
 
 .surf {
   position: relative;
+  background-image: url(../images/surf/bg.png);
+  background-position: right 219px;
+  background-repeat: no-repeat;
 }
 
 .surf .surf-title {
