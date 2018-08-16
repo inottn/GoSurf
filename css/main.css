@@ -645,6 +645,45 @@ a {
   background-color: #4af6cd;
 }
 
+.travel .current-location {
+  position: absolute;
+  top: 512px;
+  right: 80px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.travel .current-location p {
+  position: relative;
+  font-family: FiraSans-Regular;
+  font-size: 22px;
+  letter-spacing: 7px;
+  color: rgba(255, 255, 255, 0.5);
+  transform: translateX(7px);
+}
+
+.travel .current-location p::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translate(-104px, -50%);
+}
+
+.travel .current-location h2 {
+  margin-top: 12px;
+  font-family: FiraSans-ExtraBold;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.travel .current-location h2 span {
+  font-family: FiraSans-Thin;
+  font-weight: normal;
+}
+
 html {
   background-color: #171919;
 }
