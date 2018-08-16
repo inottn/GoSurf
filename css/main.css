@@ -684,6 +684,11 @@ a {
   font-weight: normal;
 }
 
+.travel .travel-img-wrapper {
+  padding-top: 423px;
+  opacity: .9;
+}
+
 html {
   background-color: #171919;
 }
