@@ -608,6 +608,43 @@ a {
   transform: translate(-268px, 0);
 }
 
+.travel {
+  position: relative;
+  margin-top: 89px;
+}
+
+.travel .travel-title {
+  position: absolute;
+  top: 250px;
+  left: 245px;
+  display: inline-block;
+  font-family: FiraSans-ExtraBold;
+  font-size: 80px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.travel .travel-title::before {
+  position: absolute;
+  top: -8px;
+  left: -294px;
+  content: 'Travel';
+  font-family: FiraSans-ExtraBold;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.02);
+  text-transform: uppercase;
+}
+
+.travel .travel-title::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background-color: #4af6cd;
+}
+
 html {
   background-color: #171919;
 }
