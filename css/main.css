@@ -294,7 +294,7 @@ a {
   background-color: #4af6cd;
 }
 
-.surf .current-location {
+.surf .right-text-wrapper {
   position: absolute;
   top: 310px;
   right: 80px;
@@ -302,7 +302,7 @@ a {
   text-transform: uppercase;
 }
 
-.surf .current-location p {
+.surf .right-text-wrapper p {
   position: relative;
   font-family: FiraSans-Regular;
   font-size: 22px;
@@ -311,7 +311,7 @@ a {
   transform: translateX(7px);
 }
 
-.surf .current-location p::before {
+.surf .right-text-wrapper p::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -321,14 +321,14 @@ a {
   transform: translate(-104px, -50%);
 }
 
-.surf .current-location h2 {
+.surf .right-text-wrapper h2 {
   margin-top: 12px;
   font-family: FiraSans-ExtraBold;
   font-size: 40px;
   color: #ffffff;
 }
 
-.surf .current-location h2 span {
+.surf .right-text-wrapper h2 span {
   font-family: FiraSans-Thin;
   font-weight: normal;
 }
@@ -645,7 +645,7 @@ a {
   background-color: #4af6cd;
 }
 
-.travel .current-location {
+.travel .right-text-wrapper {
   position: absolute;
   top: 512px;
   right: 80px;
@@ -653,7 +653,7 @@ a {
   text-transform: uppercase;
 }
 
-.travel .current-location p {
+.travel .right-text-wrapper p {
   position: relative;
   font-family: FiraSans-Regular;
   font-size: 22px;
@@ -662,7 +662,7 @@ a {
   transform: translateX(7px);
 }
 
-.travel .current-location p::before {
+.travel .right-text-wrapper p::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -672,14 +672,14 @@ a {
   transform: translate(-104px, -50%);
 }
 
-.travel .current-location h2 {
+.travel .right-text-wrapper h2 {
   margin-top: 12px;
   font-family: FiraSans-ExtraBold;
   font-size: 40px;
   color: #ffffff;
 }
 
-.travel .current-location h2 span {
+.travel .right-text-wrapper h2 span {
   font-family: FiraSans-Thin;
   font-weight: normal;
 }
