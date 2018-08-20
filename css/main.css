@@ -733,6 +733,12 @@ a {
   transform: translate(24px, -50%);
 }
 
+.travel .plane-img-wrapper {
+  position: absolute;
+  top: 1046px;
+  right: -28px;
+}
+
 html {
   background-color: #171919;
 }
