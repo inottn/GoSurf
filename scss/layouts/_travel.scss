@@ -127,4 +127,50 @@
     top: 1046px;
     right: -28px;
   }
+
+  .travel-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 106px;
+    margin-left: 133px;
+    margin-right: 133px;
+    text-transform: uppercase;
+
+    .info-item {
+      position: relative;
+
+      p {
+        position: absolute;
+        font-family: FiraSans-Regular;
+        font-size: 18px;
+        letter-spacing: 8px;
+        color: rgba(255, 255, 255, 0.5);
+        transform-origin: left center;
+        transform: rotate(-90deg) translate(calc(-100% + 12px), 50%);
+      }
+
+      h2 {
+        margin-left: 40px;
+        font-family: FiraSans-ExtraBold;
+        font-size: 40px;
+        color: #ffffff;  
+      }
+    }
+
+    .info-pricing {
+      h2 {
+        span {
+          letter-spacing: 6px;
+        }
+      }
+
+      div {
+        font-family: FiraSans-Regular;
+        font-size: 14px;
+        letter-spacing: 5px;
+        color: rgba(255, 255, 255, 0.75);
+        text-align: right;
+      }
+    }
+  }
 }
