@@ -781,6 +781,12 @@ a {
   text-align: right;
 }
 
+.travel .cocktail-img-wrapper {
+  position: absolute;
+  top: 1372px;
+  right: -100px;
+}
+
 html {
   background-color: #171919;
 }
