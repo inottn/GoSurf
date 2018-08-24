@@ -841,6 +841,42 @@ a {
   transform: translate(0, -50%);
 }
 
+.sleep {
+  position: relative;
+}
+
+.sleep .sleep-title {
+  position: absolute;
+  top: 360px;
+  left: 245px;
+  display: inline-block;
+  font-family: FiraSans-ExtraBold;
+  font-size: 80px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.sleep .sleep-title::before {
+  position: absolute;
+  top: -8px;
+  left: -294px;
+  content: 'Sleep';
+  font-family: FiraSans-ExtraBold;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.02);
+  text-transform: uppercase;
+}
+
+.sleep .sleep-title::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background-color: #4af6cd;
+}
+
 html {
   background-color: #171919;
 }

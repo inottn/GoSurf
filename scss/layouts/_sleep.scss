@@ -1,0 +1,35 @@
+.sleep {
+  position: relative;
+
+  .sleep-title {
+    position: absolute;
+    top: 360px;
+    left: 245px;
+    display: inline-block;
+    font-family: FiraSans-ExtraBold;
+    font-size: 80px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    &::before {
+      position: absolute;
+      top: -8px;
+      left: -294px;
+      content: 'Sleep';
+      font-family: FiraSans-ExtraBold;
+      font-size: 200px;
+      color: rgba(255, 255, 255, .02);
+      text-transform: uppercase;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: '';
+      width: 80px;
+      height: 1px;
+      background-color: #4af6cd;
+    }
+  }
+}
