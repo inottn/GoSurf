@@ -965,6 +965,12 @@ a {
   transform: translate(24px, -50%);
 }
 
+.sleep .hammock-img-wrapper {
+  position: absolute;
+  top: 1036px;
+  right: -78px;
+}
+
 html {
   background-color: #171919;
 }
