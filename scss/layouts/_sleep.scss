@@ -76,4 +76,48 @@
     padding-top: 572px;
     opacity: .75;
   }
+
+  .left-text-wrapper {
+    position: absolute;
+    top: 1210px;
+    left: 133px;
+    text-align: left;
+    text-transform: uppercase;
+
+    p {
+      position: relative;
+      font-family: FiraSans-Regular;
+      font-size: 22px;
+      letter-spacing: 7px;
+      color: rgba(255, 255, 255, .5);
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 80px;
+        height: 1px;
+        background-color: rgba(255, 255, 255, .5);
+        transform: translate(20px, -50%);
+      }
+    }
+
+    h2 {
+      position: relative;
+      margin-top: 12px;
+      font-family: FiraSans-ExtraBold;
+      font-size: 40px;
+      color: #ffffff;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 180px;
+        height: 46px;
+        background-image: url(../images/sleep/stars.png);
+        transform: translate(24px, -50%);
+      }
+    }
+  }
 }

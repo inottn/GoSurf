@@ -921,6 +921,50 @@ a {
   opacity: .75;
 }
 
+.sleep .left-text-wrapper {
+  position: absolute;
+  top: 1210px;
+  left: 133px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.sleep .left-text-wrapper p {
+  position: relative;
+  font-family: FiraSans-Regular;
+  font-size: 22px;
+  letter-spacing: 7px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sleep .left-text-wrapper p::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translate(20px, -50%);
+}
+
+.sleep .left-text-wrapper h2 {
+  position: relative;
+  margin-top: 12px;
+  font-family: FiraSans-ExtraBold;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.sleep .left-text-wrapper h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 180px;
+  height: 46px;
+  background-image: url(../images/sleep/stars.png);
+  transform: translate(24px, -50%);
+}
+
 html {
   background-color: #171919;
 }
