@@ -1038,6 +1038,12 @@ a {
   text-align: right;
 }
 
+.sleep .frangipani-img-wrapper {
+  position: absolute;
+  top: 1502;
+  right: -166px;
+}
+
 html {
   background-color: #171919;
 }
