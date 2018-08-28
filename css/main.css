@@ -810,16 +810,16 @@ a {
   background-color: #4af6cd;
 }
 
-.travel .bottom-text-wrapper .bottom-text-text {
+.travel .bottom-text-wrapper .bottom-text {
   padding-bottom: 14px;
 }
 
-.travel .bottom-text-wrapper .bottom-text-text span {
+.travel .bottom-text-wrapper .bottom-text span {
   padding-left: 27px;
   padding-right: 57px;
 }
 
-.travel .bottom-text-wrapper .bottom-text-text span::before {
+.travel .bottom-text-wrapper .bottom-text span::before {
   content: '';
   position: absolute;
   top: calc(50% - 7px);
@@ -830,7 +830,7 @@ a {
   transform: translate(0, -50%);
 }
 
-.travel .bottom-text-wrapper .bottom-text-text span::after {
+.travel .bottom-text-wrapper .bottom-text span::after {
   content: '';
   position: absolute;
   top: calc(50% - 7px);
