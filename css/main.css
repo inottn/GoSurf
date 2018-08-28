@@ -971,6 +971,12 @@ a {
   right: -78px;
 }
 
+.sleep .frangipani-small-img-wrapper {
+  position: absolute;
+  top: 1248px;
+  right: -86px;
+}
+
 html {
   background-color: #171919;
 }
