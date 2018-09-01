@@ -1248,6 +1248,12 @@ a {
   transform: translate(0, -50%);
 }
 
+.shop .surfboard-img-wrapper {
+  position: absolute;
+  top: 476px;
+  left: 652px;
+}
+
 html {
   background-color: #171919;
 }
