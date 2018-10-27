@@ -152,4 +152,54 @@
     top: 476px;
     left: 652px;
   }
+
+  .right-content-wrapper {
+    position: absolute;
+    top: 908px;
+    right: 0;
+    text-transform: uppercase;
+    margin-right: 64px;
+
+    .right-content-title {
+      font-family: FiraSans-ExtraBold;
+      font-size: 28px;
+      color: #ffffff;
+    }
+
+    .goods-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 26px;
+
+      .goods {
+        text-align: center;
+
+        &:first-child {
+          margin-right: 58px;
+        }
+
+        .goods-img-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 120px;
+        }
+
+        .goods-name {
+          margin-top: 26px;
+          font-family: FiraSans-Regular;
+          font-size: 18px;
+          letter-spacing: 8px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        .goods-pricing {
+          margin-top: 18px;
+          font-family: FiraSans-ExtraBold;
+          font-size: 18px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
 }
