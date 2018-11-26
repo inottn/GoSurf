@@ -1,9 +1,10 @@
 .sleep {
   position: relative;
+  margin-top: 160px;
 
   .sleep-title {
     position: absolute;
-    top: 360px;
+    top: 200px;
     left: 245px;
     display: inline-block;
     font-family: FiraSans-ExtraBold;
@@ -35,7 +36,7 @@
 
   .right-text-wrapper {
     position: absolute;
-    top: 623px;
+    top: 463px;
     right: 80px;
     text-align: right;
     text-transform: uppercase;
@@ -73,13 +74,13 @@
   }
 
   .sleep-img-wrapper {
-    padding-top: 572px;
+    padding-top: 412px;
     opacity: .75;
   }
 
   .left-text-wrapper {
     position: absolute;
-    top: 1210px;
+    top: 1050px;
     left: 133px;
     text-align: left;
     text-transform: uppercase;
@@ -123,13 +124,13 @@
 
   .hammock-img-wrapper {
     position: absolute;
-    top: 1036px;
+    top: 876px;
     right: -78px;
   }
 
   .frangipani-small-img-wrapper {
     position: absolute;
-    top: 1248px;
+    top: 1088px;
     right: -86px;
   }
 
@@ -202,7 +203,7 @@
 
   .frangipani-img-wrapper {
     position: absolute;
-    top: 1502px;
+    top: 1342px;
     right: -166px;
   }
 
