@@ -205,6 +205,15 @@ a {
   text-align: right;
 }
 
+.hero .hero-content .arrow-right img {
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+.hero .hero-content .arrow-right img:hover {
+  transform: translateX(4px);
+}
+
 .hero .hero-content .pagination {
   display: flex;
   justify-content: space-between;
