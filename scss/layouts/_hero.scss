@@ -224,5 +224,25 @@
     position: absolute;
     bottom: 42px;
     left: 210px;
+    cursor: pointer;
+    animation: arrow-down-animation 2s linear 0s infinite;
+  }
+
+  @keyframes arrow-down-animation {
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(-8px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(8px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
 }
