@@ -1,9 +1,10 @@
 .shop {
   position: relative;
+  margin-top: 150px;
 
   .shop-title {
     position: absolute;
-    top: 310px;
+    top: 160px;
     left: 245px;
     display: inline-block;
     font-family: FiraSans-ExtraBold;
@@ -34,14 +35,14 @@
   }
 
   .shop-img-wrapper {
-    padding-top: 572px;
+    padding-top: 422px;
     opacity: .85;
     text-align: right;
   }
 
   .left-content-wrapper {
     position: absolute;
-    top: 626px;
+    top: 476px;
     left: 133px;
 
     .left-text-wrapper {
@@ -149,13 +150,13 @@
 
   .surfboard-img-wrapper {
     position: absolute;
-    top: 476px;
+    top: 326px;
     left: 652px;
   }
 
   .right-content-wrapper {
     position: absolute;
-    top: 908px;
+    top: 758px;
     right: 0;
     text-transform: uppercase;
     margin-right: 64px;

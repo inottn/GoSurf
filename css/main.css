@@ -1101,11 +1101,12 @@ a {
 
 .shop {
   position: relative;
+  margin-top: 150px;
 }
 
 .shop .shop-title {
   position: absolute;
-  top: 310px;
+  top: 160px;
   left: 245px;
   display: inline-block;
   font-family: FiraSans-ExtraBold;
@@ -1136,14 +1137,14 @@ a {
 }
 
 .shop .shop-img-wrapper {
-  padding-top: 572px;
+  padding-top: 422px;
   opacity: .85;
   text-align: right;
 }
 
 .shop .left-content-wrapper {
   position: absolute;
-  top: 626px;
+  top: 476px;
   left: 133px;
 }
 
@@ -1251,13 +1252,13 @@ a {
 
 .shop .surfboard-img-wrapper {
   position: absolute;
-  top: 476px;
+  top: 326px;
   left: 652px;
 }
 
 .shop .right-content-wrapper {
   position: absolute;
-  top: 908px;
+  top: 758px;
   right: 0;
   text-transform: uppercase;
   margin-right: 64px;
