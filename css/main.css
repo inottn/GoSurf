@@ -1392,6 +1392,31 @@ a {
   text-transform: uppercase;
 }
 
+@font-face {
+  font-family: FiraSans-ExtraBold;
+  src: url("../font/FiraSans-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: FiraSans-Medium;
+  src: url("../font/FiraSans-Medium.otf");
+}
+
+@font-face {
+  font-family: FiraSans-Regular;
+  src: url("../font/FiraSans-Regular.otf");
+}
+
+@font-face {
+  font-family: FiraSans-Light;
+  src: url("../font/FiraSans-Light.otf");
+}
+
+@font-face {
+  font-family: FiraSans-Thin;
+  src: url("../font/FiraSans-Thin.otf");
+}
+
 html {
   background-color: #171919;
 }
