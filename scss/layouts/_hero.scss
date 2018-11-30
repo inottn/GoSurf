@@ -6,6 +6,10 @@
   background-position: right top, center, center;
   background-repeat: no-repeat;
 
+  @media screen and (min-width: $root-width) {
+    background-size: auto, auto, cover;
+  }
+
   .logo {
     position: absolute;
     top: 0;

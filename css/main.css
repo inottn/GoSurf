@@ -35,6 +35,12 @@ a {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-size: auto, auto, cover;
+  }
+}
+
 .hero .logo {
   position: absolute;
   top: 0;
