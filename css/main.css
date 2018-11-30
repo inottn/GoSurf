@@ -496,6 +496,13 @@ a {
   margin-top: 110px;
 }
 
+@media screen and (min-width: 1440px) {
+  .surf .shores {
+    justify-content: center;
+    transform: translateX(60px);
+  }
+}
+
 .surf .shores .shore {
   position: relative;
   flex-shrink: 0;

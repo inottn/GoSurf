@@ -209,6 +209,11 @@
     display: flex;
     margin-top: 110px;
 
+    @media screen and (min-width: $root-width) {
+      justify-content: center;
+      transform: translateX(60px);
+    }
+
     .shore {
       position: relative;
       flex-shrink: 0;
