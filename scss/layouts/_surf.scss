@@ -93,6 +93,8 @@
           border-radius: 50%;
           background-color: #4af6cd;
           box-shadow: 0px 0px 35px 0px rgba(74, 246, 205, .84);
+          cursor: pointer;
+          animation: place-spot-animation 2s linear 0s infinite;
         }
 
         .place-info-wrapper {
@@ -353,6 +355,18 @@
       img {
         transform: translate(-268px, 0);
       }
+    }
+  }
+
+  @keyframes place-spot-animation {
+    0% {
+      box-shadow: 0px 0px 35px 0px rgba(74, 246, 205, .84);
+    }
+    50% {
+      box-shadow: 0px 0px 35px 6px rgba(74, 246, 205, .64);
+    }
+    100% {
+      box-shadow: 0px 0px 35px 0px rgba(74, 246, 205, .84);
     }
   }
 }
