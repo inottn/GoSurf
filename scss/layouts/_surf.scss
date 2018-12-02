@@ -79,6 +79,13 @@
     padding-top: 367px;
     padding-left: 79px;
 
+    @media screen and (min-width: $root-width) {
+      position: relative;
+      left: 50%;
+      display: inline-block;
+      transform: translateX(calc(-50% - 79px));
+    }
+
     .places {
       position: absolute;
       top: 367px;

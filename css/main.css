@@ -373,6 +373,15 @@ a {
   padding-left: 79px;
 }
 
+@media screen and (min-width: 1440px) {
+  .surf .map {
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(calc(-50% - 79px));
+  }
+}
+
 .surf .map .places {
   position: absolute;
   top: 367px;
