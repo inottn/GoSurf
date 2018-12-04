@@ -33,6 +33,10 @@
   src: url("../font/FiraSans-Thin.otf");
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   background-color: #171919;
 }
