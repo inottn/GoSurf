@@ -595,6 +595,7 @@ a {
 
 .surf .shores .shore .view-surf .view-surf-text {
   padding-bottom: 14px;
+  white-space: nowrap;
 }
 
 .surf .shores .shore .view-surf .view-surf-text span {
@@ -876,6 +877,7 @@ a {
 
 .travel .bottom-text-wrapper .bottom-text {
   padding-bottom: 14px;
+  white-space: nowrap;
 }
 
 .travel .bottom-text-wrapper .bottom-text span {
@@ -1134,6 +1136,7 @@ a {
 
 .sleep .bottom-text-wrapper .bottom-text {
   padding-bottom: 14px;
+  white-space: nowrap;
 }
 
 .sleep .bottom-text-wrapper .bottom-text span {
@@ -1285,6 +1288,7 @@ a {
 
 .shop .left-content-wrapper .drop-in .drop-in-text {
   padding-bottom: 14px;
+  white-space: nowrap;
 }
 
 .shop .left-content-wrapper .drop-in .drop-in-text span {
@@ -1398,6 +1402,7 @@ a {
 
 .footer .text-wrapper .text {
   padding-bottom: 12px;
+  white-space: nowrap;
 }
 
 .footer .text-wrapper .text span {
