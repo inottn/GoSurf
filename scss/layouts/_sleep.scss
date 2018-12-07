@@ -219,7 +219,8 @@
     text-transform: uppercase;
     transform: translate(-50%);
 
-    .bottom-text-bg {
+    &::before {
+      content: '';
       position: absolute;
       z-index: -1;
       bottom: 0;

@@ -105,7 +105,8 @@
       color: #ffffff;
       text-transform: uppercase;
   
-      .drop-in-bg {
+      &::before {
+        content: '';
         position: absolute;
         z-index: -1;
         bottom: 0;

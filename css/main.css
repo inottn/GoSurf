@@ -583,7 +583,8 @@ a {
   text-transform: uppercase;
 }
 
-.surf .shores .shore .view-surf .view-surf-bg {
+.surf .shores .shore .view-surf::before {
+  content: '';
   position: absolute;
   z-index: -1;
   bottom: 0;
@@ -865,7 +866,8 @@ a {
   transform: translate(-50%);
 }
 
-.travel .bottom-text-wrapper .bottom-text-bg {
+.travel .bottom-text-wrapper::before {
+  content: '';
   position: absolute;
   z-index: -1;
   bottom: 0;
@@ -1124,7 +1126,8 @@ a {
   transform: translate(-50%);
 }
 
-.sleep .bottom-text-wrapper .bottom-text-bg {
+.sleep .bottom-text-wrapper::before {
+  content: '';
   position: absolute;
   z-index: -1;
   bottom: 0;
@@ -1276,7 +1279,8 @@ a {
   text-transform: uppercase;
 }
 
-.shop .left-content-wrapper .drop-in .drop-in-bg {
+.shop .left-content-wrapper .drop-in::before {
+  content: '';
   position: absolute;
   z-index: -1;
   bottom: 0;
@@ -1390,7 +1394,8 @@ a {
   transform: translate(-50%);
 }
 
-.footer .text-wrapper .text-bg {
+.footer .text-wrapper::before {
+  content: '';
   position: absolute;
   z-index: -1;
   bottom: 0;

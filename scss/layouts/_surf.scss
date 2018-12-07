@@ -285,7 +285,8 @@
         color: #ffffff;
         text-transform: uppercase;
 
-        .view-surf-bg {
+        &::before {
+          content: '';
           position: absolute;
           z-index: -1;
           bottom: 0;
