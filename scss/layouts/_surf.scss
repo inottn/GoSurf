@@ -223,12 +223,63 @@
       transform: translateX(60px);
     }
 
+    @media screen and (min-width: $tablet-width) and (max-width: $laptop-l-width - 1) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: $tablet-width - 1) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .shore {
       position: relative;
       flex-shrink: 0;
       width: 390px;
       height: 750px;
       overflow: hidden;
+
+      @media screen and (min-width: $laptop-l-width) and (max-width: $root-width - 1) {
+        max-width: 390px;
+        width: calc(25% + 30px);
+      }
+
+      @media screen and (min-width: $laptop-width) and (max-width: $laptop-l-width - 1) {
+        transform: none!important;
+
+        &:nth-child(n + 3) {
+          margin-top: 80px;
+        }
+      }
+
+      @media screen and (min-width: $tablet-width) and (max-width: $laptop-width - 1) {
+        transform: none!important;
+
+        &:nth-child(n + 3) {
+          margin-top: 60px;
+        }
+      }
+
+      @media screen and (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
+        transform: none!important;
+
+        &:not(:first-child) {
+          margin-top: 60px;
+        }
+      }
+
+      @media screen and (max-width: $mobile-width - 1) {
+        flex-shrink: 1;
+        max-width: 390px;
+        min-width: 320px;
+        transform: none!important;
+
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+      }
 
       &::after {
         content: '';
@@ -266,6 +317,7 @@
         font-size: 18px;
         letter-spacing: 8px;
         color: #ffffff;
+        white-space: nowrap;
         text-transform: uppercase;
         transform-origin: left center;
         transform: rotate(-90deg) translate(-662px, 48px);
@@ -279,11 +331,12 @@
         position: absolute;
         z-index: $shore-z-index + 11;
         bottom: 0;
-        left: 45px;
+        left: 50%;
         font-family: FiraSans-ExtraBold;
         font-size: 40px;
         color: #ffffff;
         text-transform: uppercase;
+        transform: translateX(-50%);
 
         &::before {
           content: '';

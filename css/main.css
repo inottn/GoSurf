@@ -519,12 +519,73 @@ a {
   }
 }
 
+@media screen and (min-width: 780px) and (max-width: 1159px) {
+  .surf .shores {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .surf .shores {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .surf .shores .shore {
   position: relative;
   flex-shrink: 0;
   width: 390px;
   height: 750px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1160px) and (max-width: 1439px) {
+  .surf .shores .shore {
+    max-width: 390px;
+    width: calc(25% + 30px);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1159px) {
+  .surf .shores .shore {
+    transform: none !important;
+  }
+  .surf .shores .shore:nth-child(n + 3) {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1023px) {
+  .surf .shores .shore {
+    transform: none !important;
+  }
+  .surf .shores .shore:nth-child(n + 3) {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 779px) {
+  .surf .shores .shore {
+    transform: none !important;
+  }
+  .surf .shores .shore:not(:first-child) {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .surf .shores .shore {
+    flex-shrink: 1;
+    max-width: 390px;
+    min-width: 320px;
+    transform: none !important;
+  }
+  .surf .shores .shore:not(:first-child) {
+    margin-top: 20px;
+  }
 }
 
 .surf .shores .shore::after {
@@ -563,6 +624,7 @@ a {
   font-size: 18px;
   letter-spacing: 8px;
   color: #ffffff;
+  white-space: nowrap;
   text-transform: uppercase;
   transform-origin: left center;
   transform: rotate(-90deg) translate(-662px, 48px);
@@ -576,11 +638,12 @@ a {
   position: absolute;
   z-index: 211;
   bottom: 0;
-  left: 45px;
+  left: 50%;
   font-family: FiraSans-ExtraBold;
   font-size: 40px;
   color: #ffffff;
   text-transform: uppercase;
+  transform: translateX(-50%);
 }
 
 .surf .shores .shore .view-surf::before {
