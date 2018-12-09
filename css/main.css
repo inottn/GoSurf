@@ -378,6 +378,7 @@ a {
     left: 50%;
     display: inline-block;
     transform: translateX(calc(-50% - 79px));
+    transform: translateX(-50%) translateX(-79px);
   }
 }
 
@@ -889,6 +890,7 @@ a {
   color: rgba(255, 255, 255, 0.5);
   transform-origin: left center;
   transform: rotate(-90deg) translate(calc(-100% + 12px), 50%);
+  transform: rotate(-90deg) translate(-100%, 50%) translateX(12px);
 }
 
 .travel .travel-info-wrapper .info-item h2 {
@@ -1130,6 +1132,7 @@ a {
   color: rgba(255, 255, 255, 0.5);
   transform-origin: left center;
   transform: rotate(-90deg) translate(calc(-100% + 12px), 50%);
+  transform: rotate(-90deg) translate(-100%, 50%) translateX(12px);
 }
 
 .sleep .sleep-info-wrapper .info-item h2 {

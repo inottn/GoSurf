@@ -84,6 +84,7 @@
       left: 50%;
       display: inline-block;
       transform: translateX(calc(-50% - 79px));
+      transform: translateX(-50%) translateX(-79px);
     }
 
     .places {
