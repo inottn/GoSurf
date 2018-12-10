@@ -235,13 +235,20 @@ a {
 }
 
 .hero .hero-content .pagination .pagination-item .progress {
+  position: relative;
   margin-bottom: 10px;
   width: 200px;
   height: 4px;
   background-color: #ffffff;
 }
 
-.hero .hero-content .pagination .pagination-item .progress.active {
+.hero .hero-content .pagination .pagination-item .progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--progress-width, 0);
+  height: 100%;
   background-color: #4af6cd;
 }
 
