@@ -1,3 +1,5 @@
+import { Progress } from './progress.js'
+
 const dateEl = document.querySelector('.hero .nav .date')
 const dataDayEl = dateEl.querySelector('.hero .nav .date .data-day')
 const dataYearAndMonthEl = dateEl.querySelector('.hero .nav .date .data-year-and-month')
@@ -32,3 +34,8 @@ const scrollIntoView = (el, view) => {
 for (let i = 0; i < scrollEls.length; i++) {
   scrollIntoView(scrollEls[i], scrollViews[i])
 }
+
+// 当前进度条的进度为100%时，自动切换到下一个进度条
+const progress = new Progress('.progress')
+
+progress.animate()

@@ -1,6 +1,55 @@
 (function () {
   'use strict';
 
+  function throttle (func, wait) {
+    let previous = 0;
+
+    return (...args) => {
+        let now = +new Date();
+
+        if (now - previous > wait) {
+            func.apply(this, args);
+            previous = now;
+        }
+    }
+  }
+
+  function animate (fn, interval = 0, ...args) {
+    fn = interval ? throttle.call(this, fn, interval) : fn;
+
+    const inner = () => {
+      fn();
+      this.timer = requestAnimationFrame(inner);
+    };
+
+    this.timer = requestAnimationFrame(inner);
+  }
+
+  class Progress {
+    constructor (el, index = 2) {
+      this.el = typeof el === 'string' ? document.querySelectorAll(el) : el;
+      this.count = this.el.length;
+      this.index = index;
+      this.percentage = 0;
+      this.timer = null;
+    }
+
+    progress () {
+      if (this.percentage > 100) {
+        this.percentage = 0;
+        this.el[this.index].style.setProperty('--progress-width', this.percentage + '%');
+        this.index = this.index === this.count - 1 ? 0 : this.index + 1;
+      }
+
+      this.el[this.index].style.setProperty('--progress-width', this.percentage + '%');
+      this.percentage++;
+    }
+
+    animate () {
+      animate.call(this, this.progress, 50);
+    }
+  }
+
   const dateEl = document.querySelector('.hero .nav .date');
   const dataDayEl = dateEl.querySelector('.hero .nav .date .data-day');
   const dataYearAndMonthEl = dateEl.querySelector('.hero .nav .date .data-year-and-month');
@@ -35,5 +84,10 @@
   for (let i = 0; i < scrollEls.length; i++) {
     scrollIntoView(scrollEls[i], scrollViews[i]);
   }
+
+  // 实现进度条间的切换
+  const progress = new Progress('.progress');
+
+  progress.animate();
 
 }());
