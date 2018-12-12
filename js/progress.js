@@ -24,4 +24,23 @@ export class Progress {
   animate () {
     animate.call(this, this.progress, this.interval)
   }
+
+  cancelAnimation () {
+    cancelAnimationFrame(this.timer)
+  }
+
+  redirect (index) {
+    this.cancelAnimation()
+
+    this.percentage = 0
+    this.el[this.index].style.setProperty('--progress-width', this.percentage + '%');
+    this.index = index
+
+    this.animate()
+  }
+
+  next () {
+    let index = this.index === this.count - 1 ? 0 : this.index + 1
+    this.redirect(index)
+  }
 }

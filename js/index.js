@@ -26,11 +26,12 @@
   }
 
   class Progress {
-    constructor (el, index = 2) {
+    constructor (el, index = 2, interval = 50) {
       this.el = typeof el === 'string' ? document.querySelectorAll(el) : el;
       this.count = this.el.length;
       this.index = index;
       this.percentage = 0;
+      this.interval = interval;
       this.timer = null;
     }
 
@@ -46,7 +47,26 @@
     }
 
     animate () {
-      animate.call(this, this.progress, 50);
+      animate.call(this, this.progress, this.interval);
+    }
+
+    cancelAnimation () {
+      cancelAnimationFrame(this.timer);
+    }
+
+    redirect (index) {
+      this.cancelAnimation();
+
+      this.percentage = 0;
+      this.el[this.index].style.setProperty('--progress-width', this.percentage + '%');
+      this.index = index;
+
+      this.animate();
+    }
+
+    next () {
+      let index = this.index === this.count - 1 ? 0 : this.index + 1;
+      this.redirect(index);
     }
   }
 
@@ -85,9 +105,16 @@
     scrollIntoView(scrollEls[i], scrollViews[i]);
   }
 
-  // 实现进度条间的切换
+  // 当前进度条的进度为100%时，自动切换到下一个进度条
   const progress = new Progress('.progress');
 
   progress.animate();
+
+  // 点击 progressArrowRight 元素，切换到下一个进度条
+  const progressArrowRight = document.querySelector('.hero .hero-content .arrow-right img');
+
+  progressArrowRight.addEventListener('click', () => {
+    progress.next();
+  });
 
 }());

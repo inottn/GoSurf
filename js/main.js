@@ -39,3 +39,10 @@ for (let i = 0; i < scrollEls.length; i++) {
 const progress = new Progress('.progress')
 
 progress.animate()
+
+// 点击 progressArrowRight 元素，切换到下一个进度条
+const progressArrowRight = document.querySelector('.hero .hero-content .arrow-right img')
+
+progressArrowRight.addEventListener('click', () => {
+  progress.next()
+})
