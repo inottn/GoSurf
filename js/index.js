@@ -14,11 +14,17 @@
     }
   }
 
+  const animateFnCache = new Map();
+
   function animate (fn, interval = 0, ...args) {
-    fn = interval ? throttle.call(this, fn, interval) : fn;
+    if (!animateFnCache.has(fn)) animateFnCache.set(fn, Object.create(null));
+
+    fn = interval
+      ? animateFnCache.get(fn)[interval] || (animateFnCache.get(fn)[interval] = throttle.call(this, fn, interval))
+      : fn;
 
     const inner = () => {
-      fn();
+      fn(...args);
       this.timer = requestAnimationFrame(inner);
     };
 
